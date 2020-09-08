@@ -260,7 +260,7 @@ body {
 }
 .plate__img {
   position: relative;
-  width: 80%;
+  width: 100%;
   margin: 0 auto;
 }
 .plate__img img {

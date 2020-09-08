@@ -20,7 +20,7 @@ canvas {
 }
 
 body {
-  background-image: url("");
+  background-image: url("media/STEAKHOUSE-FONDO-PANTALLAS-PC.jpg");
   background-repeat: no-repeat;
   background-position: bottom;
   background-attachment: fixed;
@@ -157,7 +157,7 @@ body {
   z-index: 99;
 }
 .header__logo {
-  width: 280px;
+  width: 100%;
   position: absolute;
   z-index: 100;
   bottom: 0;

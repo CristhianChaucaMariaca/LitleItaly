@@ -1,8 +1,14 @@
+@import url('https://fonts.googleapis.com/css2?family=Cinzel+Decorative:wght@400;700;900&family=Cinzel:wght@400;500;700;800;900&display=swap');
+// @font-face{
+//     font-family: 'Cincel Black';
+//     src: url('https://fonts.googleapis.com/css2?family=Cinzel+Decorative:wght@400;700;900&display=swap') format('truetype');
+// }
 @font-face{
-    font-family: Barnum;
-    src: url($font) format('truetype');
+    font-family: 'Gandhi';
+    src: url('fonts/gandhi/GandhiSerif-Regular.otf') format('truetype');
 }
 body{
-    font-family: Barnum;
+    font-family: 'Gandhi';
+    font-weight: 300;
     font-size: 12pt;
 }

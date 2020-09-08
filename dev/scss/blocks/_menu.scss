@@ -1,9 +1,14 @@
 .menu{
+    background-image: url($background);
+    background-position: top;
+    background-size: cover;
+    background-repeat: no-repeat;
     width: 100wh;
     display: flex;
+    flex-direction: column;
     justify-content: center;
     align-items: center;
-    padding-bottom: 50px;
+    padding-top:100px;
     &__body{
         max-width: 800px;
         display: block;
@@ -17,31 +22,33 @@
     }
     &__nav{
         display: grid;
-        grid-template-columns: repeat(4, 1fr);
-        grid-column-gap: 30px;
-        grid-row-gap: 30px;
+        grid-template-columns: repeat(2, 1fr);
+        grid-column-gap: 15px;
+        grid-row-gap: 15px;
     }
     
     &__item{
+        font-family: $font;
+        font-weight: 800;
         text-decoration: none;
         text-transform: uppercase;
         text-align: center;
-        color:$colorsecundario;
+        color:$colorprimario;
         position: relative;
         font-size: 1.3em;
-        width: 180px;
+        width: 170px;
         &:hover{
             transform: scale(1.05);
             transition:all .3s;
         }
-        &:last-child{
-            grid-row-start: 3;
-            grid-column-end: 4;
-        }
-        &:nth-last-child(2){
-            grid-row-start: 3;
-            grid-column-end: 3;
-        }
+        // &:last-child{
+        //     grid-row-start: 3;
+        //     grid-column-end: 4;
+        // }
+        // &:nth-last-child(2){
+        //     grid-row-start: 3;
+        //     grid-column-end: 3;
+        // }
     }
     &__btn{
         width: 100%;

@@ -3,6 +3,7 @@
         width: 90%;
     }
     .menu{
+        padding-top: 50px;
         &__nav{
             grid-template-columns: repeat(2, 1fr);
             grid-gap: 20px;
@@ -20,9 +21,6 @@
         }
     }
     .header{
-        &__logo{
-            width: 250px;
-        }
     }
     .dishes{
         grid-template-columns: repeat(3, 1fr);
@@ -48,5 +46,10 @@
         bottom: 30px;
         right: 30px;
         width: 90px;
+    }
+    .footer{
+        &__body{
+            width: 80%;
+        }
     }
 }

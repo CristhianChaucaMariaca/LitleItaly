@@ -1,15 +1,17 @@
-mixin plato(img,title,price,pricetwo,ingredients)
+mixin plato(img,title,price,pricetwo,ingredients,category)
     .plate
         .plate__img
-            .plate__logo
-                img(src="media/"+logo.img, alt=logo.alt)
+            //- .plate__logo
+            //-     img(src="media/"+logo.img+logo.extention, alt=logo.alt)
             picture.plate__cont__picture
-                img.plate__picture(srcset="media/"+plates.category+"/"+img+".jpg", alt=title)
-        .container
-            .plate__body
-                h2.plate__title #{title}
-                p.plate__price #{price}
+                img.plate__picture(srcset="media/"+category+"/"+img+".jpg", alt=title)
+        
+        .plate__body
+            h2.plate__title #{title}
+            p.plate__text #{ingredients}
+            .hr
+            p.plate__price #{price}
+            if(pricetwo!=="")
                 p.plate__price #{pricetwo}
-                p.plate__text #{ingredients}
         .plate__pepsi
             img(alt="logo sponsor", srcset="media/"+sponsor)

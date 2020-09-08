@@ -1,3 +1,4 @@
+@import url("https://fonts.googleapis.com/css2?family=Cinzel+Decorative:wght@400;700;900&family=Cinzel:wght@400;500;700;800;900&display=swap");
 * {
   padding: 0px;
   margin: 0px;
@@ -20,11 +21,10 @@ canvas {
 }
 
 body {
-  background-image: url("media/STEAKHOUSE-FONDO-PANTALLAS-PC.jpg");
-  background-repeat: no-repeat;
-  background-position: bottom;
-  background-attachment: fixed;
+  background-image: url("media/litle_italy-fondo-pc.jpg");
   background-size: cover;
+  background-repeat: no-repeat;
+  background-position: center;
 }
 
 .container {
@@ -35,20 +35,39 @@ body {
 }
 
 @font-face {
-  font-family: Barnum;
-  src: url("fonts/p.t.barnumregular.ttf") format("truetype");
+  font-family: "Gandhi";
+  src: url("fonts/gandhi/GandhiSerif-Regular.otf") format("truetype");
 }
 body {
-  font-family: Barnum;
+  font-family: "Gandhi";
+  font-weight: 300;
   font-size: 12pt;
 }
 
+.footer {
+  margin-top: 30px;
+  width: 100%;
+}
+.footer__body {
+  width: 640px;
+  margin: 0 auto;
+}
+.footer__img {
+  max-width: 100%;
+  display: block;
+}
+
 .menu {
+  background-image: url("media/litle_italy-fondo-pc.jpg");
+  background-position: top;
+  background-size: cover;
+  background-repeat: no-repeat;
   width: 100wh;
   display: flex;
+  flex-direction: column;
   justify-content: center;
   align-items: center;
-  padding-bottom: 50px;
+  padding-top: 100px;
 }
 .menu__body {
   max-width: 800px;
@@ -63,30 +82,24 @@ body {
 }
 .menu__nav {
   display: grid;
-  grid-template-columns: repeat(4, 1fr);
-  grid-column-gap: 30px;
-  grid-row-gap: 30px;
+  grid-template-columns: repeat(2, 1fr);
+  grid-column-gap: 15px;
+  grid-row-gap: 15px;
 }
 .menu__item {
+  font-family: "Cinzel", serif;
+  font-weight: 800;
   text-decoration: none;
   text-transform: uppercase;
   text-align: center;
-  color: #ffe9d3;
+  color: #472C0F;
   position: relative;
   font-size: 1.3em;
-  width: 180px;
+  width: 170px;
 }
 .menu__item:hover {
   transform: scale(1.05);
   transition: all 0.3s;
-}
-.menu__item:last-child {
-  grid-row-start: 3;
-  grid-column-end: 4;
-}
-.menu__item:nth-last-child(2) {
-  grid-row-start: 3;
-  grid-column-end: 3;
 }
 .menu__btn {
   width: 100%;
@@ -122,8 +135,8 @@ body {
 #preloading .load {
   width: 50px;
   height: 50px;
-  border-top: 5px solid #ffe9d3;
-  border-left: 5px solid #ffe9d3;
+  border-top: 5px solid #faa740;
+  border-left: 5px solid #faa740;
   border-radius: 100%;
   animation: girar 0.8s infinite linear;
   opacity: 0.7;
@@ -149,7 +162,6 @@ body {
 .header {
   width: 100%;
   position: relative;
-  margin-bottom: 100px;
 }
 .header__img {
   max-width: 100%;
@@ -157,7 +169,7 @@ body {
   z-index: 99;
 }
 .header__logo {
-  width: 280px;
+  width: 100%;
   position: absolute;
   z-index: 100;
   bottom: 0;
@@ -167,21 +179,34 @@ body {
 
 .headerdishes {
   font-size: 1.1em;
-  background-color: #472C0F;
-  color: #ffe9d3;
-  padding-bottom: 3px;
-  padding-top: 3px;
-  text-transform: uppercase;
+  color: #faa740;
   margin-bottom: 30px;
   position: relative;
+}
+.headerdishes__img {
+  width: 100%;
+  display: block;
+}
+.headerdishes__picture {
+  display: block;
+}
+.headerdishes__text {
+  position: absolute;
+  color: #faa740;
+  display: block;
+  left: 50%;
+  top: 50%;
+  transform: translateX(-50%) translateY(-50%);
+  font-weight: 900;
 }
 
 .dishes {
   display: grid;
-  grid-template-columns: repeat(4, minmax(190px, 1fr));
+  grid-template-columns: repeat(2, minmax(190px, 226px));
   grid-column-gap: 40px;
   grid-row-gap: 30px;
-  margin-bottom: 70px;
+  margin-bottom: 50px;
+  justify-content: center;
 }
 .dishes__link {
   text-decoration: none;
@@ -207,9 +232,11 @@ body {
 }
 .dishes__name {
   text-align: center;
-  font-size: 1.3em;
+  font-size: 1.1em;
   color: #472C0F;
   justify-content: center;
+  font-family: "Cinzel Decorative", cursive;
+  font-weight: 700;
 }
 
 .content__plate {
@@ -249,22 +276,21 @@ body {
 }
 .plate__body {
   color: #472C0F;
-  padding-left: 30px;
-  padding-right: 30px;
 }
 .plate__title {
   font-size: 1.6em;
   margin-top: 10px;
   margin-bottom: 7px;
   text-align: center;
-  text-transform: uppercase;
+  font-family: "Cinzel", serif;
+  font-weight: 900;
 }
 .plate__price {
   text-align: center;
   font-size: 1.1em;
 }
 .plate__text {
-  font-size: 1.1em;
+  font-size: 1.2em;
   margin-top: 7px;
   text-align: center;
 }
@@ -276,6 +302,14 @@ body {
 }
 .plate__pepsi img {
   max-width: 100%;
+}
+.plate .hr {
+  width: 100%;
+  height: 1px;
+  display: block;
+  background-color: #472C0F;
+  margin-top: 20px;
+  margin-bottom: 20px;
 }
 
 .lists {
@@ -296,7 +330,7 @@ body {
   bottom: 50%;
   width: 90%;
   transform: translateY(42%) translateX(-50%);
-  color: #ffe9d3;
+  color: #faa740;
   font-size: 1.35em;
   text-transform: uppercase;
 }
@@ -351,6 +385,9 @@ body {
     width: 90%;
   }
 
+  .menu {
+    padding-top: 50px;
+  }
   .menu__nav {
     grid-template-columns: repeat(2, 1fr);
     grid-gap: 20px;
@@ -365,10 +402,6 @@ body {
   .menu__item:nth-last-child(2) {
     grid-row-start: auto;
     grid-column-end: auto;
-  }
-
-  .header__logo {
-    width: 250px;
   }
 
   .dishes {
@@ -399,6 +432,10 @@ body {
     right: 30px;
     width: 90px;
   }
+
+  .footer__body {
+    width: 80%;
+  }
 }
 @media screen and (max-width: 480px) {
   body {
@@ -418,12 +455,18 @@ body {
     grid-column-gap: 15px;
     grid-row-gap: 12px;
     font-size: 14px;
+    font-size: 1rem;
   }
   .dishes__text {
     text-align: center;
     line-height: 0.92em;
   }
+  .dishes__name {
+    font-size: 0.8em;
+  }
+
   .plate {
+    width: 85%;
     margin-top: 20px;
     margin-bottom: 20px;
     font-size: 16px;
@@ -452,13 +495,14 @@ body {
     margin-top: 14px;
   }
 
-  .header {
-    margin-bottom: 75px;
-  }
   .header__logo {
-    width: 200px;
+    width: 100%;
   }
 
+  .menu {
+    background-image: url("media/litle_italy-fondo-small.png");
+    padding-top: 55px;
+  }
   .menu__nav {
     grid-template-columns: repeat(2, 1fr);
     grid-row-gap: 15px;
@@ -476,15 +520,31 @@ body {
   .btn {
     width: 80px;
   }
+
+  .footer__body {
+    width: 100%;
+  }
 }
 @media screen and (max-width: 320px) {
+  body {
+    font-size: 14px;
+  }
+
   .dishes__text {
     font-size: 1.2em;
   }
 
   .menu {
-    grid-column-gap: 10px;
+    font-size: 0.7rem;
   }
+  .menu__item {
+    width: 100px;
+    font-size: 1em;
+  }
+  .menu__nav {
+    grid-gap: 8px;
+  }
+
   .lists {
     font-size: 1.1rem;
   }

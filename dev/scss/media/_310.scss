@@ -1,13 +1,20 @@
 @media screen and(max-width:320px){
+    body{
+        font-size: 14px;
+    }
     .dishes{
         &__text{
             font-size: 1.2em;
         }
     }
     .menu{
-        grid-column-gap: 10px;
+        font-size: .7rem;
         &__item{
-
+            width: 100px;
+            font-size: 1em;
+        }
+        &__nav{
+            grid-gap: 8px;
         }
     }
     .lists{

@@ -60,13 +60,15 @@
     .menu{
         background-image: url("media/litaly-fondo-small.jpg");
         padding-top:55px;
+        font-size: 1rem;
         &__nav{
             grid-template-columns: repeat(2, 1fr);
             grid-row-gap: 15px;
-            grid-column-gap: 23px;
+            grid-column-gap: 15px;
         }
         &__item{
-            width: 140px;
+            width: 7.5em;
+            height: 3.75em;
             font-size: 1em;
         }
     }

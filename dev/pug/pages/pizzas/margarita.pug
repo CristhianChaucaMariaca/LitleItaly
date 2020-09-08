@@ -8,6 +8,7 @@ append config
             - page = plato.text
             - metadescripcion = plato.description
 block content
+    include ../../includes/header-plate
     .content__plate
         // TODO: * modificar variable objeto
         each plato in pizzas.content
@@ -18,3 +19,4 @@ block content
     include ../../blocks/btn_atras
     //- TODO: * Modificar variable
     +btn(pizzas.category)
+    include ../../includes/footer

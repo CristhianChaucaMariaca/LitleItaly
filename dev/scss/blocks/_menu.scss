@@ -1,17 +1,26 @@
+.maxwidth{
+    width: 100%;
+    min-height: 100vh;
+    display: flex;
+    flex-direction: column;
+}
 .menu{
     background-image: url($background);
     background-position: top;
     background-size: cover;
     background-repeat: no-repeat;
-    width: 100wh;
+    width: 100vw;
     display: flex;
     flex-direction: column;
     justify-content: center;
     align-items: center;
     padding-top:100px;
+    flex-grow: 1;
+    // min-height: 600px;
     &__body{
         max-width: 800px;
         display: block;
+        flex-grow: 1;
     }
     &__logo{
         background-color: #ccc;

@@ -4,7 +4,7 @@ append config
     // TODO: * modificar variable objeto
     each plato in pizzas.content
         // TODO: * modificar variable TITULO
-        if(plato.text == "Bumacha Pasta")
+        if(plato.text == "Margarita")
             - page = plato.text
             - metadescripcion = plato.description
 block content
@@ -13,8 +13,8 @@ block content
         // TODO: * modificar variable objeto
         each plato in pizzas.content
             // TODO: * modificar variable TITULO
-            if(plato.text == "Bumacha Pasta") 
-                +plato(plato.img,plato.text,plato.price_uno,plato.price_dos,plato.description,pizzas.category)
+            if(plato.text == "Margarita") 
+                +plato(plato.img,plato.text,plato.price_uno,plato.price_dos,plato.price_tres,plato.description,pizzas.category)
             
     include ../../blocks/btn_atras
     //- TODO: * Modificar variable

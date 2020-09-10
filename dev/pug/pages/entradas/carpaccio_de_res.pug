@@ -1,0 +1,22 @@
+extends ../../templates/template.pug
+include ../../mixins/plato
+append config
+    // TODO: * modificar variable objeto
+    each plato in entradas.content
+        // TODO: * modificar variable TITULO
+        if(plato.text == "Carpaccio de res")
+            - page = plato.text
+            - metadescripcion = plato.description
+block content
+    include ../../includes/header-plate
+    .content__plate
+        // TODO: * modificar variable objeto
+        each plato in entradas.content
+            // TODO: * modificar variable TITULO
+            if(plato.text == "Carpaccio de res") 
+                +plato(plato.img,plato.text,plato.price_uno,plato.price_dos,plato.price_tres,plato.description,entradas.category)
+            
+    include ../../blocks/btn_atras
+    //- TODO: * Modificar variable
+    +btn(entradas.category)
+    include ../../includes/footer

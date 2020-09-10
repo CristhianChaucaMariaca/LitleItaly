@@ -278,6 +278,8 @@ body {
   justify-content: center;
   font-family: "Cinzel Decorative", cursive;
   font-weight: 700;
+  display: flex;
+  flex-wrap: wrap;
 }
 
 .content__plate {

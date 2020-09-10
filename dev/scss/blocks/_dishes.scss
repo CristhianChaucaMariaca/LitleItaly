@@ -65,5 +65,7 @@
         justify-content: center;
         font-family: $font-decorative;
         font-weight: 700;
+        display: flex;
+        flex-wrap: wrap;
     }
 }

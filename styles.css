@@ -131,12 +131,12 @@ body {
   text-decoration: none;
   text-transform: uppercase;
   text-align: center;
-  color: #472c0f;
+  color: #7f0319;
   width: 10rem;
   height: 4.375rem;
   position: relative;
   font-size: 1.3em;
-  border: solid 3px #faa740;
+  border: solid 3px #d1b359;
   background-color: white;
   border-radius: 10px;
   padding: 5px;
@@ -167,7 +167,7 @@ body {
   left: 0;
   width: 100vw;
   height: 100vh;
-  background-color: rgba(71, 44, 15, 0.7);
+  background-color: rgba(127, 3, 25, 0.7);
   display: flex;
   justify-content: center;
   align-items: center;
@@ -175,8 +175,8 @@ body {
 #preloading .load {
   width: 50px;
   height: 50px;
-  border-top: 5px solid #faa740;
-  border-left: 5px solid #faa740;
+  border-top: 5px solid #d1b359;
+  border-left: 5px solid #d1b359;
   border-radius: 100%;
   animation: girar 0.8s infinite linear;
   opacity: 0.7;
@@ -219,7 +219,7 @@ body {
 
 .headerdishes {
   font-size: 1.1em;
-  color: #faa740;
+  color: #d1b359;
   margin-bottom: 30px;
   position: relative;
 }
@@ -232,7 +232,7 @@ body {
 }
 .headerdishes__text {
   position: absolute;
-  color: #faa740;
+  color: #d1b359;
   display: block;
   left: 50%;
   top: 50%;
@@ -276,7 +276,7 @@ body {
 .dishes__name {
   text-align: center;
   font-size: 1.1em;
-  color: #472c0f;
+  color: #000;
   justify-content: center;
   font-family: "Cinzel", serif;
   font-weight: 800;
@@ -323,7 +323,7 @@ body {
   transition: transform 5.5s linear;
 }
 .plate__body {
-  color: #472c0f;
+  color: #7f0319;
 }
 .plate__title {
   font-size: 1.6em;
@@ -336,11 +336,13 @@ body {
 .plate__price {
   text-align: center;
   font-size: 1.1em;
+  color: #000;
 }
 .plate__text {
   font-size: 1.2em;
   margin-top: 7px;
   text-align: center;
+  color: #4d4d4d;
 }
 .plate__pepsi {
   width: 40px;
@@ -355,7 +357,7 @@ body {
   width: 100%;
   height: 1px;
   display: block;
-  background-color: #472c0f;
+  background-color: #4d4d4d;
   margin-top: 20px;
   margin-bottom: 20px;
 }
@@ -368,33 +370,49 @@ body {
 }
 .lists__header {
   text-align: center;
-  width: 14em;
-  position: relative;
-  margin: 0 auto;
+  margin-bottom: 10px;
 }
 .lists__title {
-  position: absolute;
-  left: 50%;
-  bottom: 50%;
   width: 90%;
-  transform: translateY(42%) translateX(-50%);
-  color: #faa740;
+  color: #4d4d4d;
   font-size: 1.35em;
-  text-transform: uppercase;
+  margin: 0 auto;
 }
 .lists__item {
   display: flex;
   flex-wrap: nowrap;
   justify-content: space-between;
   align-items: baseline;
+  margin-bottom: 7px;
 }
 .lists__name {
   font-size: 1.3em;
 }
 .lists__line {
   flex-grow: 1;
-  border-bottom: 2px #472c0f;
+  border-bottom: 2px #7f0319;
   border-bottom-style: dotted;
+}
+.lists--uno {
+  flex-grow: 1;
+}
+.lists--prices {
+  width: 70px;
+  text-align: center;
+}
+.lists__names {
+  width: 100%;
+  display: flex;
+  margin-top: 15px;
+}
+.lists__drinkname {
+  height: 1px;
+  flex-grow: 1;
+}
+.lists__name-price {
+  width: 70px;
+  text-align: center;
+  color: #4d4d4d;
 }
 
 .btn {
@@ -405,6 +423,40 @@ body {
 }
 .btn__img {
   width: 100%;
+}
+
+.sponsors {
+  width: 100%;
+  max-width: 100%;
+}
+.sponsors__content {
+  width: 60px;
+  align-self: start;
+  margin-top: 40px;
+  align-self: center;
+  margin-left: 10px;
+  margin-right: 10px;
+}
+.sponsors__body {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-around;
+  flex-wrap: wrap;
+}
+.sponsors__img {
+  max-width: 100%;
+}
+
+#Pacenia {
+  width: 100px;
+}
+
+#huari {
+  width: 100px;
+}
+
+#Guarana {
+  width: 70px;
 }
 
 @media screen and (min-width: 1367px) {
@@ -569,6 +621,15 @@ body {
 
   .btn {
     width: 80px;
+  }
+
+  .sponsors__body {
+    flex-direction: column;
+  }
+  .sponsors__content {
+    width: 50px;
+    margin-left: 20px;
+    margin-right: 20px;
   }
 
   .footer__body {

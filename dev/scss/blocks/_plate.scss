@@ -53,11 +53,13 @@
   &__price {
     text-align: center;
     font-size: 1.1em;
+    color: $colorblack;
   }
   &__text {
     font-size: 1.2em;
     margin-top: 7px;
     text-align: center;
+    color: $colortres;
   }
   &__pepsi {
     width: 40px;
@@ -72,7 +74,7 @@
     width: 100%;
     height: 1px;
     display: block;
-    background-color: $colorprimario;
+    background-color: $colortres;
     margin-top: 20px;
     margin-bottom: 20px;
   }

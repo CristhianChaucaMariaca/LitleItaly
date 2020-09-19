@@ -1,4 +1,4 @@
-mixin plato(img,title,price,pricetwo,pricethree,ingredients,category)
+mixin plato(img,title,price,pricetwo,pricethree,ingredients,category,sponsor)
     .plate
         .plate__img
             //- .plate__logo
@@ -16,10 +16,12 @@ mixin plato(img,title,price,pricetwo,pricethree,ingredients,category)
                 p.plate__price Bs&nbsp;#{pricetwo}
             if(pricethree)
                 p.plate__price Bs&nbsp;#{pricethree}
-        .plate__pepsi
-            img(alt="logo sponsor", srcset="media/"+sponsor)
+        .sponsors
+            .sponsors__body
+                include sponsor
+                +sponsor(sponsor)
 
-mixin plato2(img,title,price,pricetwo,pricethree,ingredients,category)
+mixin plato2(img,title,price,pricetwo,pricethree,ingredients,category,sponsor)
     .plate
         .plate__img
             //- .plate__logo
@@ -37,5 +39,7 @@ mixin plato2(img,title,price,pricetwo,pricethree,ingredients,category)
                 p.plate__price Personal&nbsp;Bs&nbsp;#{pricetwo}
             if(pricethree)
                 p.plate__price Porción&nbsp;Bs&nbsp;#{pricethree}
-        .plate__pepsi
-            img(alt="logo sponsor", srcset="media/"+sponsor)
+        .sponsors
+            .sponsors__body
+                include sponsor
+                +sponsor(sponsor)

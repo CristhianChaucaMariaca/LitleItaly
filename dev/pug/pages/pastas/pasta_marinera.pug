@@ -14,7 +14,7 @@ block content
         each plato in pastas.content
             // TODO: * modificar variable TITULO
             if(plato.text == "Pasta Marinera") 
-                include ../../includes/plato-pastas
+                +plato2(plato.img,plato.text,plato.price_uno,plato.price_dos,plato.price_tres,plato.description,pastas.category)
             
     include ../../blocks/btn_atras
     //- TODO: * Modificar variable

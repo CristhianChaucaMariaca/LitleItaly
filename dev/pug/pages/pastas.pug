@@ -1,5 +1,5 @@
 extends ../templates/template-dishes
-include ../mixins/platos-pastas
+include ../mixins/platos
 block append config
     - page = pastas.name //TODO: * Modificar nombre de objeto
     - metadescripcion = pastas.descripcion //TODO: * Modificar nombre de objeto
@@ -10,4 +10,4 @@ block content
             each plate in pastas.content
                 if(plate.status === true)
                     //- TODO: * Modificar objeto para la description
-                    +platosPastas(plate.link,plate.img,plate.text,plate.price_uno,plate.price_dos,plate.price_tres,pastas.category)
+                    +platos(plate.link,plate.img,plate.text,plate.price_uno,plate.price_dos,plate.price_tres,pastas.category)

@@ -6,13 +6,20 @@
 
   &__header {
     text-align: center;
-    margin-bottom: 10px;
+    margin-bottom: 20px;
+    margin-top: 20px;
   }
   &__title {
-    width: 90%;
     color: $colortres;
     font-size: 1.35em;
     margin: 0 auto;
+    background-color: white;
+    border: solid 3px $colorsecundario;
+    display: inline;
+    padding-top: 3px;
+    padding-bottom: 3px;
+    padding-left: 10px;
+    padding-right: 10px;
   }
   &__marco {
   }
@@ -31,7 +38,6 @@
   &__line {
     flex-grow: 1;
     border-bottom: 2px $colorprimario;
-    border-bottom-style: dotted;
   }
   &--uno {
     flex-grow: 1;

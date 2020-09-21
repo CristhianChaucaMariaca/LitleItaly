@@ -43,3 +43,25 @@ mixin plato2(img,title,price,pricetwo,pricethree,ingredients,category,sponsor)
             .sponsors__body
                 include sponsor
                 +sponsor(sponsor)
+mixin platotres(img,title,price,pricetwo,pricethree,ingredients,category,sponsor)
+    .plate
+        .plate__img
+            //- .plate__logo
+            //-     img(src="media/"+logo.img+logo.extention, alt=logo.alt)
+            picture.plate__cont__picture
+                img.plate__picture(srcset="media/"+category+"/"+img+".jpg", alt=title)
+        
+        .plate__body
+            h2.plate__title #{title}
+            p.plate__text #{ingredients}
+            .hr
+            if(price)
+                p.plate__price G - Bs&nbsp;#{price}
+            if(pricetwo)
+                p.plate__price M 32cm -&nbsp;Bs&nbsp;#{pricetwo}
+            if(pricethree)
+                p.plate__price S 20cm -&nbsp;Bs&nbsp;#{pricethree}
+        .sponsors
+            .sponsors__body
+                include sponsor
+                +sponsor(sponsor)

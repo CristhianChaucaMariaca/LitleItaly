@@ -369,10 +369,12 @@ body {
 }
 
 .lists {
+  font-size: 1.2rem;
   max-width: 700px;
   margin: 0 auto;
-  font-size: 1rem;
   margin-bottom: 50px;
+  margin-top: 30px;
+  color: #7f0319;
 }
 .lists__header {
   text-align: center;
@@ -397,13 +399,11 @@ body {
   justify-content: space-between;
   align-items: baseline;
   margin-bottom: 7px;
+  position: relative;
 }
 .lists__name {
-  font-size: 1.3em;
-}
-.lists__line {
+  font-size: 1em;
   flex-grow: 1;
-  border-bottom: 2px #7f0319;
 }
 .lists--uno {
   flex-grow: 1;
@@ -424,7 +424,47 @@ body {
 .lists__name-price {
   width: 70px;
   text-align: center;
-  color: #4d4d4d;
+}
+.lists__price {
+  width: 70px;
+  text-align: right;
+}
+.lists__price--right {
+  text-align: right;
+  width: 50px;
+}
+
+.chops {
+  display: flex;
+  flex-direction: column;
+}
+.chops__header {
+  display: flex;
+}
+.chops__name {
+  min-height: 1px;
+  width: 70px;
+  text-align: right;
+}
+.chops__name:first-child {
+  flex-grow: 1;
+}
+.chops__name-bebida {
+  flex-grow: 1;
+}
+.chops__price {
+  text-align: right;
+}
+.chops__body {
+  display: flex;
+  flex-direction: row;
+}
+.chops__prices {
+  display: grid;
+  grid-template-columns: repeat(4, 70px);
+}
+.chops__items {
+  flex-grow: 1;
 }
 
 .btn {
@@ -634,10 +674,6 @@ body {
     font-size: 1em;
   }
 
-  .lists {
-    font-size: 1em;
-  }
-
   .btn {
     width: 80px;
   }
@@ -653,6 +689,24 @@ body {
 
   .footer__body {
     width: 100%;
+  }
+
+  .lists {
+    font-size: 0.9em;
+  }
+  .lists__content {
+    width: 85%;
+    margin: 0 auto;
+  }
+
+  .chops__prices {
+    grid-template-columns: repeat(4, 50px);
+  }
+  .chops__price {
+    width: 50px;
+  }
+  .chops__name {
+    width: 50px;
   }
 }
 @media screen and (max-width: 320px) {
@@ -673,9 +727,5 @@ body {
   }
   .menu__nav {
     grid-gap: 8px;
-  }
-
-  .lists {
-    font-size: 1.1rem;
   }
 }

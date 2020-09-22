@@ -1,65 +1,63 @@
-.maxwidth{
-    width: 100%;
-    min-height: 100vh;
-    display: flex;
-    flex-direction: column;
+.maxwidth {
+  width: 100%;
+  min-height: 100vh;
+  display: flex;
+  flex-direction: column;
 }
-.menu{
-    background-image: url($background);
-    background-position: top;
-    background-size: cover;
-    background-repeat: no-repeat;
-    width: 100vw;
+.menu {
+  background-image: url($background);
+  background-position: top;
+  background-size: cover;
+  background-repeat: no-repeat;
+  width: 100vw;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  padding-top: 70px;
+  flex-grow: 1;
+  &__body {
+    display: block;
+    flex-grow: 1;
+  }
+  &__logo {
+    background-color: #ccc;
+    width: 200px;
+    height: 200px;
+    margin: 0 auto;
+    margin-bottom: 50px;
+  }
+  &__nav {
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    grid-column-gap: 15px;
+    grid-row-gap: 15px;
+  }
+
+  &__item {
+    font-family: $font;
+    font-weight: 800;
+    text-decoration: none;
+    text-transform: uppercase;
+    text-align: center;
+    color: $colorprimario;
+    width: 10rem;
+    height: 4.375rem;
+    position: relative;
+    font-size: 1.3em;
+    border: solid 3px $colorsecundario;
+    background-color: white;
+    border-radius: 10px;
+    padding: 5px;
     display: flex;
-    flex-direction: column;
     justify-content: center;
     align-items: center;
-    padding-top:70px;
-    flex-grow: 1;
-    // min-height: 600px;
-    &__body{
-        max-width: 800px;
-        display: block;
-        flex-grow: 1;
+    &:hover {
+      transform: scale(1.05);
+      transition: all 0.3s;
     }
-    &__logo{
-        background-color: #ccc;
-        width: 200px;
-        height: 200px;
-        margin:0 auto;
-        margin-bottom: 50px;
-    }
-    &__nav{
-        display: grid;
-        grid-template-columns: repeat(2, 1fr);
-        grid-column-gap: 15px;
-        grid-row-gap: 15px;
-    }
-    
-    &__item{
-        font-family: $font;
-        font-weight: 800;
-        text-decoration: none;
-        text-transform: uppercase;
-        text-align: center;
-        color:$colorprimario;
-        width: 10rem;
-        height: 4.375rem;
-        position: relative;
-        font-size: 1.3em;
-        border:solid 3px $colorsecundario;
-        background-color: white;
-        border-radius: 10px;
-        padding: 5px;
-        display: flex;
-        justify-content: center;
-        align-items: center;
-        &:hover{
-            transform: scale(1.05);
-            transition:all .3s;
-        }
-    }
-    &__text{
-        display: block;
-    }
+  }
+  &__text {
+    display: block;
+  }
 }

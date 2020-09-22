@@ -23,7 +23,7 @@
 }
 .dishes {
   display: grid;
-  grid-template-columns: repeat(2, minmax(190px, 226px));
+  grid-template-columns: repeat(4, minmax(190px, 226px));
   grid-column-gap: 40px;
   grid-row-gap: 30px;
   margin-bottom: 50px;

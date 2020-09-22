@@ -1,15 +1,15 @@
-.footer{
-    flex-grow: 1;
-    margin-top: 10px;
-    width: 100%;
-    display: flex;
-    &__body{
-        width: 640px;
-        margin: 0 auto;
-        align-self: flex-end;
-    }
-    &__img{
-        max-width: 100%;
-        display: block;
-    }
+.footer {
+  flex-grow: 1;
+  margin-top: 10px;
+  width: 100%;
+  display: flex;
+  &__body {
+    width: 640px;
+    margin: 0 auto;
+    align-self: flex-end;
+  }
+  &__img {
+    max-width: 100%;
+    display: block;
+  }
 }

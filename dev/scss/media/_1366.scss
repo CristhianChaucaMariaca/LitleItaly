@@ -1,28 +1,27 @@
-@media screen and(min-width:1367px)
-{
-    body{
-        font-size: 19px;
+@media screen and(min-width:1367px) {
+  body {
+    font-size: 19px;
+  }
+  .plate {
+    width: 30.5rem;
+    margin-top: 20px;
+    &__logo {
+      width: 10.625rem;
     }
-    .plate{
-        width: 37.5rem;
-        &__logo{
-            width: 10.625rem;
-        }
-        &__title{
-        }
-        &__text{
-        }
-        &__pepsi{
-            
-        }
+    &__title {
     }
-    .menu{
-        &__item{
-            width: 190px;
-        }
+    &__text {
     }
-    .lists{
-        font-size: 1.5rem;
-        max-width: 100%;
+    &__pepsi {
     }
+  }
+  .menu {
+    &__item {
+      width: 190px;
+    }
+  }
+  .lists {
+    font-size: 1.5rem;
+    max-width: 100%;
+  }
 }

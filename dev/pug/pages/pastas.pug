@@ -4,10 +4,9 @@ block append config
     - page = pastas.name //TODO: * Modificar nombre de objeto
     - metadescripcion = pastas.descripcion //TODO: * Modificar nombre de objeto
 block content
-    .container
-        .dishes
-            // TODO: * Modificar el | INCLUDE | y la variable de objetos
-            each plate in pastas.content
-                if(plate.status === true)
-                    //- TODO: * Modificar objeto para la description
-                    +platos(plate.link,plate.img,plate.text,plate.price_uno,plate.price_dos,plate.price_tres,pastas.category)
+    .dishes
+        // TODO: * Modificar el | INCLUDE | y la variable de objetos
+        each plate in pastas.content
+            if(plate.status === true)
+                //- TODO: * Modificar objeto para la description
+                +platos(plate.link,plate.img,plate.text,plate.price_uno,plate.price_dos,plate.price_tres,pastas.category)

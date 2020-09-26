@@ -1,4 +1,4 @@
-@media screen and(max-width:320px) {
+@media screen and(max-width:360px) {
   body {
     font-size: 14px;
   }
@@ -8,13 +8,31 @@
     }
   }
   .menu {
-    font-size: 0.7rem;
+    font-size: 1rem;
+    &__body{
+      width: 100%;
+    }
     &__item {
-      width: 100px;
-      font-size: 1em;
+      font-size: 1.1em;
+      
     }
     &__nav {
-      grid-gap: 8px;
+      margin:0 auto;
+      width: 85%;
+      max-width: 100%;
+      justify-content: center;
+      align-items: center;
     }
   }
 }
+@media screen and(max-width:320px) {
+  .menu{
+    &__nav{
+      width: 90%;
+    }
+    &__item{
+      font-size: 1em;
+    }    
+  }
+}
+

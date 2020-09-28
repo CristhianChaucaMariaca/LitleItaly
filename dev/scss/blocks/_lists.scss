@@ -3,20 +3,22 @@
   max-width: 700px;
   margin: 0 auto;
   margin-bottom: 50px;
-  margin-top: 30px;
   color: $colorprimario;
 
   &__header {
     text-align: center;
-    margin-bottom: 20px;
-    margin-top: 20px;
+    margin-bottom: 10px;
+    margin-top: 40px;
+    &:first-child{
+      margin-top: 25px;
+    }
   }
   &__title {
-    color: $colortres;
+    color: $colorblack;
     font-size: 1.35em;
     margin: 0 auto;
-    background-color: white;
-    border: solid 3px $colorsecundario;
+    // background-color: white;
+    // border: solid 3px $colorsecundario;
     display: inline;
     padding-top: 3px;
     padding-bottom: 3px;

@@ -373,20 +373,20 @@ body {
   max-width: 700px;
   margin: 0 auto;
   margin-bottom: 50px;
-  margin-top: 30px;
   color: #7f0319;
 }
 .lists__header {
   text-align: center;
-  margin-bottom: 20px;
-  margin-top: 20px;
+  margin-bottom: 10px;
+  margin-top: 40px;
+}
+.lists__header:first-child {
+  margin-top: 25px;
 }
 .lists__title {
-  color: #4d4d4d;
+  color: #000;
   font-size: 1.35em;
   margin: 0 auto;
-  background-color: white;
-  border: solid 3px #d1b359;
   display: inline;
   padding-top: 3px;
   padding-bottom: 3px;

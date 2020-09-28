@@ -6,16 +6,16 @@ mixin platos(link,img,text,price_uno,price_dos,price_tres,category)
         .dishes__name
             p.dishes__text #{text}
             if (price_uno)
-                p.dishes__price Bs&nbsp;#{price_uno}
+                p.dishes__price Bs &nbsp;#{price_uno}
                 if (price_dos) 
                     p.dishes__price &nbsp;-&nbsp;#{price_dos}
                 if (price_tres) 
                     p.dishes__price &nbsp;-&nbsp;#{price_tres}
             else
                 if (price_dos) 
-                    p.dishes__price Bs&nbsp;#{price_dos}
+                    p.dishes__price Bs &nbsp;#{price_dos}
                 else
                     if (price_tres)
-                        p.dishes__price Bs&nbsp;#{price_tres}
+                        p.dishes__price Bs &nbsp;#{price_tres}
                 if (price_tres) 
                     p.dishes__price &nbsp;-&nbsp;#{price_tres}  

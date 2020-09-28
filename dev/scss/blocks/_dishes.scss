@@ -1,7 +1,7 @@
 .headerdishes {
   font-size: 1.1em;
   color: $colorsecundario;
-  // text-transform: lowercase;
+  text-transform: uppercase;
   margin-bottom: 30px;
   position: relative;
   &__img {
@@ -23,6 +23,9 @@
     font-weight: 900;
   }
 }
+.content-dishes{
+  flex-grow: 1;
+}
 .dishes {
   display: grid;
   grid-template-columns: repeat(4, minmax(190px, 226px));
@@ -30,7 +33,6 @@
   grid-row-gap: 30px;
   margin-bottom: 50px;
   justify-content: center;
-  flex-grow: 1;
   width: 90%;
   margin: 0 auto;
   &__link {

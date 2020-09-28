@@ -218,6 +218,7 @@ body {
 .headerdishes {
   font-size: 1.1em;
   color: #d1b359;
+  text-transform: uppercase;
   margin-bottom: 30px;
   position: relative;
 }
@@ -240,6 +241,10 @@ body {
   font-weight: 900;
 }
 
+.content-dishes {
+  flex-grow: 1;
+}
+
 .dishes {
   display: grid;
   grid-template-columns: repeat(4, minmax(190px, 226px));
@@ -247,7 +252,6 @@ body {
   grid-row-gap: 30px;
   margin-bottom: 50px;
   justify-content: center;
-  flex-grow: 1;
   width: 90%;
   margin: 0 auto;
 }

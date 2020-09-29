@@ -7,8 +7,8 @@ mixin plato(img,title,price,pricetwo,pricethree,ingredients,category,sponsor)
                 img.plate__picture(srcset="media/"+category+"/"+img+".jpg", alt=title)
         
         .plate__body
-            h2.plate__title #{title}
-            p.plate__text #{ingredients}
+            h2.plate__title !{title}
+            p.plate__text !{ingredients}
             .hr
             if(price)
                 p.plate__price Bs &nbsp;#{price}
@@ -30,8 +30,8 @@ mixin plato2(img,title,price,pricetwo,pricethree,ingredients,category,sponsor)
                 img.plate__picture(srcset="media/"+category+"/"+img+".jpg", alt=title)
         
         .plate__body
-            h2.plate__title #{title}
-            p.plate__text #{ingredients}
+            h2.plate__title !{title}
+            p.plate__text !{ingredients}
             .hr
             if(price)
                 p.plate__price Familiar&nbsp;Bs &nbsp;#{price}
@@ -52,8 +52,8 @@ mixin platotres(img,title,price,pricetwo,pricethree,ingredients,category,sponsor
                 img.plate__picture(srcset="media/"+category+"/"+img+".jpg", alt=title)
         
         .plate__body
-            h2.plate__title #{title}
-            p.plate__text #{ingredients}
+            h2.plate__title !{title}
+            p.plate__text !{ingredients}
             .hr
             if(price)
                 p.plate__price G - Bs&nbsp;#{price}

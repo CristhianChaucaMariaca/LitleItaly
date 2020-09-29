@@ -4,7 +4,7 @@ mixin platos(link,img,text,price_uno,price_dos,price_tres,category)
             picture.dishes__picture
                 img.dishes__img(alt=text,srcset="media/"+category+"/thumbnail/"+img+"-thumbnail.jpg",loading="lazy")
         .dishes__name
-            p.dishes__text #{text}
+            p.dishes__text !{text}
             if (price_uno)
                 p.dishes__price Bs &nbsp;#{price_uno}
                 if (price_dos) 

@@ -4,7 +4,7 @@ append config
     // TODO: * modificar variable objeto
     each plato in pastas.content
         // TODO: * modificar variable TITULO
-        if(plato.text == "Lasaña a la boloñesa")
+        if(plato.text == "Lasaña a la Boloñesa")
             - page = plato.text
             - metadescripcion = plato.description
 block content
@@ -13,7 +13,7 @@ block content
         // TODO: * modificar variable objeto
         each plato in pastas.content
             // TODO: * modificar variable TITULO
-            if(plato.text == "Lasaña a la boloñesa") 
+            if(plato.text == "Lasaña a la Boloñesa") 
                 +plato2(plato.img,plato.text,plato.price_uno,plato.price_dos,plato.price_tres,plato.description,pastas.category,sponsors[1])
             
     include ../../blocks/btn_atras

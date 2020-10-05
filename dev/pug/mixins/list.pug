@@ -8,9 +8,9 @@ mixin body(items)
         each item in items
             .lists__item
                 p.lists__name #{item.name}
-                p.lists__price #{item.price}
-                if(item.price_dos)
-                    p.lists__price--right #{item.price_dos}
+                //- p.lists__price #{item.price}
+                //- if(item.price_dos)
+                //-     p.lists__price--right #{item.price_dos}
 //- Llenamos el vector names para colocar títulos.
 - var names = ["","Vaso","500ml", "Lt.","Pitcher"]
 mixin chops(items)

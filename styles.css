@@ -148,6 +148,7 @@ body {
 }
 .menu__text {
   display: block;
+  transform: translateY(5%);
 }
 
 .ocultar {
@@ -342,6 +343,7 @@ body {
   text-align: center;
   font-family: "Cinzel", serif;
   font-weight: 900;
+  line-height: 1.2;
 }
 .plate__price {
   text-align: center;
@@ -378,6 +380,7 @@ body {
   margin: 0 auto;
   margin-bottom: 50px;
   color: #7f0319;
+  text-align: center;
 }
 .lists__header {
   text-align: center;

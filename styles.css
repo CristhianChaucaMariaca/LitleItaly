@@ -541,6 +541,11 @@ body {
     max-width: 100%;
   }
 }
+@media (max-width: 1060px) {
+  .dishes {
+    grid-template-columns: repeat(3, 1fr);
+  }
+}
 @media screen and (max-device-width: 768px) {
   .container {
     width: 90%;
@@ -595,6 +600,11 @@ body {
 
   .footer__body {
     width: 80%;
+  }
+}
+@media (max-width: 660px) {
+  .dishes {
+    grid-template-columns: repeat(2, 1fr);
   }
 }
 @media screen and (max-width: 480px) {

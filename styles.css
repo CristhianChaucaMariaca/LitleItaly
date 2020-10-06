@@ -399,6 +399,7 @@ body {
   padding-bottom: 3px;
   padding-left: 10px;
   padding-right: 10px;
+  text-transform: uppercase;
 }
 .lists__item {
   display: flex;

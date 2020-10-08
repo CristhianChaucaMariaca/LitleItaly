@@ -2,21 +2,21 @@ extends ../../templates/template.pug
 include ../../mixins/plato
 append config
     // TODO: * modificar variable objeto
-    each plato in infantil.content
+    each plato in pizzas.content
         // TODO: * modificar variable TITULO
-        if(plato.text == "Salchi Pasta")
+        if(plato.text == "Salchi Pizza")
             - page = plato.text
             - metadescripcion = plato.description
 block content
     include ../../includes/header-plate
     .content__plate
         // TODO: * modificar variable objeto
-        each plato in infantil.content
+        each plato in pizzas.content
             // TODO: * modificar variable TITULO
-            if(plato.text == "Salchi Pasta") 
-                +plato2(plato.img,plato.text,plato.price_uno,plato.price_dos,plato.price_tres,plato.description,infantil.category,sponsors[5])
+            if(plato.text == "Salchi Pizza") 
+                +platotres(plato.img,plato.text,plato.price_uno,plato.price_dos,plato.price_tres,plato.description,pizzas.category,sponsors[3])
             
     include ../../blocks/btn_atras
     //- TODO: * Modificar variable
-    +btn(infantil.category)
+    +btn(pizzas.category)
     include ../../includes/footer

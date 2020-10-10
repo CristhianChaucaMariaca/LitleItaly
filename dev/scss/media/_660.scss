@@ -1,6 +1,11 @@
-@media (max-width:660px)
+@media screen and (max-width:660px)
 {
     .dishes{
         grid-template-columns: repeat(2, 1fr);
+    }
+    .menu{
+        &__nav{
+            width: 80%;
+        }
     }
 }

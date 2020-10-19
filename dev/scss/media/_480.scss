@@ -59,6 +59,7 @@
   .header {
     &__logo {
       width: 100%;
+      bottom:0px;
     }
   }
   .menu {
@@ -80,13 +81,21 @@
   }
   .sponsors {
     &__body {
-      flex-direction: column;
     }
     &__content {
-      width: 50px;
+      width: 40px;
       margin-left: 20px;
       margin-right: 20px;
     }
+  }
+  #Pacenia {
+    width: 80px;
+  }
+  #huari {
+    width: 80px;
+  }
+  #Guarana {
+    width: 60px;
   }
   .footer {
     &__body {

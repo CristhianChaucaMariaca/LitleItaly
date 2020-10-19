@@ -60,16 +60,17 @@
     text-align: center;
     width: 100%;
     display: block;
+
   }
   &__price {
     font-size: 1.1em;
   }
   &__name {
     text-align: center;
-    font-size: 1.1em;
+    font-size: 1.4em;
     color: $colorblack;
     justify-content: center;
-    font-family: $font;
+    font-family: $font-bold;
     font-weight: 800;
     display: flex;
     flex-wrap: wrap;

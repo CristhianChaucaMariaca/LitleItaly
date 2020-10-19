@@ -3,6 +3,12 @@
   font-family: "Gandhi";
   src: url("fonts/gandhi/GandhiSerif-Regular.otf") format("truetype");
 }
+@font-face {
+  font-family: "GandhiBold";
+  src: url("fonts/gandhi/GandhiSerif-BoldItalic.otf") format("truetype");
+}
+$font-b: "GandhiBold";
+$font-bold: $font-b;
 body {
   font-family: "Gandhi";
   font-weight: 300;

@@ -42,6 +42,10 @@ body {
   font-family: "Gandhi";
   src: url("fonts/gandhi/GandhiSerif-Regular.otf") format("truetype");
 }
+@font-face {
+  font-family: "GandhiBold";
+  src: url("fonts/gandhi/GandhiSerif-BoldItalic.otf") format("truetype");
+}
 body {
   font-family: "Gandhi";
   font-weight: 300;
@@ -209,6 +213,7 @@ body {
   max-width: 100%;
   width: 100%;
   z-index: 99;
+  display: block;
 }
 .header__logo {
   width: 100%;
@@ -288,10 +293,10 @@ body {
 }
 .dishes__name {
   text-align: center;
-  font-size: 1.1em;
+  font-size: 1.4em;
   color: #000;
   justify-content: center;
-  font-family: "Cinzel", serif;
+  font-family: "GandhiBold";
   font-weight: 800;
   display: flex;
   flex-wrap: wrap;
@@ -340,11 +345,11 @@ body {
   color: #7f0319;
 }
 .plate__title {
-  font-size: 1.6em;
+  font-size: 1.8em;
   margin-top: 10px;
   margin-bottom: 7px;
   text-align: center;
-  font-family: "Cinzel", serif;
+  font-family: "GandhiBold";
   font-weight: 900;
   line-height: 1.2;
 }
@@ -499,7 +504,7 @@ body {
   align-self: center;
   margin-left: 10px;
   margin-right: 10px;
-  margin-top: 70px;
+  margin-top: 20px;
 }
 .sponsors__body {
   display: flex;
@@ -578,6 +583,10 @@ body {
   }
   .menu__item:last-child {
     margin-bottom: 0px;
+  }
+
+  .header__logo {
+    bottom: -10px;
   }
 
   .dishes {
@@ -687,6 +696,7 @@ body {
 
   .header__logo {
     width: 100%;
+    bottom: 0px;
   }
 
   .menu {
@@ -708,13 +718,22 @@ body {
     width: 80px;
   }
 
-  .sponsors__body {
-    flex-direction: column;
-  }
   .sponsors__content {
-    width: 50px;
+    width: 40px;
     margin-left: 20px;
     margin-right: 20px;
+  }
+
+  #Pacenia {
+    width: 80px;
+  }
+
+  #huari {
+    width: 80px;
+  }
+
+  #Guarana {
+    width: 60px;
   }
 
   .footer__body {

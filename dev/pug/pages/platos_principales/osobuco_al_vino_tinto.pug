@@ -4,7 +4,7 @@ append config
     // TODO: * modificar variable objeto
     each plato in platos_principales.content
         // TODO: * modificar variable TITULO
-        if(plato.text == "Osobuco al vino tinto")
+        if(plato.text == "Osobuco al Vino Tinto")
             - page = plato.text
             - metadescripcion = plato.description
 block content
@@ -13,7 +13,7 @@ block content
         // TODO: * modificar variable objeto
         each plato in platos_principales.content
             // TODO: * modificar variable TITULO
-            if(plato.text == "Osobuco al vino tinto") 
+            if(plato.text == "Osobuco al Vino Tinto") 
                 +plato(plato.img,plato.text,plato.price_uno,plato.price_dos,plato.price_tres,plato.description,platos_principales.category,sponsors[4])
             
     include ../../blocks/btn_atras

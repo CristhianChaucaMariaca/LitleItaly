@@ -1,5 +1,5 @@
 mixin sponsor(sponsor)
-    .sponsors__content(id=sponsor.name)
+    .sponsors__content.sponsors__content--plate(id=sponsor.name)
         img.sponsors__img(alt="Sponsor "+sponsor.name, srcset="media/"+sponsor.img+sponsor.extencion)
 mixin sponsors(sponsors)
     .sponsors

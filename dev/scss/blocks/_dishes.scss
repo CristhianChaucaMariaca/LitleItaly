@@ -31,10 +31,10 @@
   grid-template-columns: repeat(4, minmax(190px, 226px));
   grid-column-gap: 40px;
   grid-row-gap: 30px;
-  margin-bottom: 50px;
   justify-content: center;
   width: 90%;
   margin: 0 auto;
+  margin-bottom: 50px;
   &__link {
     text-decoration: none;
     width: 100%;

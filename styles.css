@@ -259,10 +259,10 @@ body {
   grid-template-columns: repeat(4, minmax(190px, 226px));
   grid-column-gap: 40px;
   grid-row-gap: 30px;
-  margin-bottom: 50px;
   justify-content: center;
   width: 90%;
   margin: 0 auto;
+  margin-bottom: 50px;
 }
 .dishes__link {
   text-decoration: none;
@@ -506,6 +506,9 @@ body {
   margin-right: 10px;
   margin-top: 20px;
 }
+.sponsors__content--plate {
+  margin-top: 70px;
+}
 .sponsors__body {
   display: flex;
   flex-direction: row;
@@ -554,7 +557,7 @@ body {
     grid-template-columns: repeat(3, 1fr);
   }
 }
-@media screen and (max-device-width: 768px) {
+@media screen and (max-width: 768px) {
   .container {
     width: 90%;
   }
